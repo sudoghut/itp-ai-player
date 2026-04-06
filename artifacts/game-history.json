@@ -1,0 +1,189 @@
+{
+  "playthroughs": [
+    {
+      "id": 1,
+      "character": "郭振声",
+      "occupation_start": "船工",
+      "age_start": 37,
+      "year_start": 1100,
+      "ending": "孤灯难明",
+      "ending_type": "bad",
+      "year_end": 1120,
+      "age_end": 67,
+      "stats_at_end": {
+        "connected": 1,
+        "survived": 0
+      },
+      "occupation_progression": ["船工", "漕运小头目", "河工督吏", "白身平民"],
+      "choices": [
+        {"year": 1100, "choice": "安抚同伴，稳住阵脚", "result": "正面，获得信任"},
+        {"year": 1102, "choice": "未记录（自动选择）", "result": "跳至1105年"},
+        {"year": 1105, "choice": "应征河工，求取功名", "result": "晋升河工督吏，但嗓子嘶哑"},
+        {"year": 1108, "choice": "折中处理，略作照拂", "result": "官位得保，弟兄感恩"},
+        {"year": 1111, "choice": "应征河工，求取功名", "result": "进一步劳损"},
+        {"year": 1114, "choice": "举荐贤能，急流勇退", "result": "让位给年轻人"},
+        {"year": 1117, "choice": "折中处理，略作照拂", "result": "权衡世放"},
+        {"year": 1120, "choice": "劝其留守，共度时艰", "result": "坚守故土但最终沦落"},
+        {"year": 1123, "choice": "强撑病体，协助赈济", "result": "角色死亡"}
+      ],
+      "achievements_unlocked": ["八面玲珑", "两袖清风"],
+      "lessons_learned": [
+        "过于务实/自保的选择导致同伴死亡",
+        "资财清零（两袖清风）导致从官员沦为平民后迅速衰亡",
+        "需要更积极维系人际关系增加连结人数",
+        "群像结局需要至少2-3人连结且存活"
+      ]
+    },
+    {
+      "id": 2,
+      "character": "庞组儿",
+      "occupation_start": "民妇",
+      "age_start": 28,
+      "year_start": 1100,
+      "ending": "盗药失手毙于途",
+      "ending_type": "bad",
+      "year_end": 1102,
+      "age_end": 30,
+      "stats_at_end": null,
+      "occupation_progression": ["民妇"],
+      "choices": [
+        {"year": 1100, "choice": "提醒船工当心", "result": "心善重诺"},
+        {"year": 1101, "choice": "劝丈夫忍耐守正", "result": "坚韧渐谦，但陷入极度贫困"},
+        {"year": 1102, "choice": "偷药（可能误触）", "result": "被抓，流放途中死亡"}
+      ],
+      "achievements_unlocked": ["命悬一线"],
+      "lessons_learned": [
+        "纯忍耐型被动选择无法解决生存问题",
+        "需要选既善良又能解决实际问题的选项",
+        "推进对话时混入click会误触选项，必须分开操作"
+      ]
+    },
+    {
+      "id": 3,
+      "character": "吴小六",
+      "occupation_start": "船工",
+      "age_start": 21,
+      "year_start": 1100,
+      "stats_at_end": null,
+      "occupation_progression": ["船工", "船工兼码头护工头", "码头行会执事"],
+      "choices": [
+        {"year": 1100, "choice": "呼喊失主", "result": "正直守信，人情提升"},
+        {"year": 1102, "choice": "纠众防备", "result": "升为码头护工头，刚硬护短"},
+        {"year": 1104, "choice": "求助旧识", "result": "借势弄险"},
+        {"year": 1106, "choice": "引荐入行（书生陈先生）", "result": "升为行会执事，善用智计"},
+        {"year": 1108, "choice": "护船遣散", "result": "念旧重情，保全众人"},
+        {"year": 1110, "choice": "借势施压", "result": "借势弄险"},
+        {"year": 1112, "choice": "借势施压", "result": "陈先生写《江南泣血录》引起朝野震动，弹劾应奉局成功"},
+        {"year": 1112, "choice": "转移资财", "result": "准备撤退，但触怒权贵被报复"},
+        {"year": 1114, "choice": "贿赂脱身", "result": "雨夜喋血，角色死亡"}
+      ],
+      "ending": "雨夜喋血",
+      "ending_type": "bad",
+      "year_end": 1114,
+      "age_end": 35,
+      "achievements_unlocked": [],
+      "lessons_learned": [
+        "主动助人的选择能快速建立连结",
+        "团结众人（纠众防备）直接升职",
+        "引荐人才能增强组织能力",
+        "保全团队比眼前利益更重要",
+        "连续两次'借势施压'导致与权贵正面对抗，触发报复",
+        "转移资财暴露了逃跑意图，加速了追杀",
+        "面对包围时'贿赂脱身'不够——应该更早撤离汴京",
+        "在1112年选择'急流勇退'可能是更好的选择"
+      ],
+      "strategy": "积极建立连结、保全同伴、维持资财、追求群像结局"
+    },
+    {
+      "id": 4,
+      "character": "杨怀瑾",
+      "occupation_start": "从九品三班借职（闲散武官）",
+      "age_start": 29,
+      "year_start": 1100,
+      "ending": "边镇归途遇袭",
+      "ending_type": "bad",
+      "year_end": 1107,
+      "age_end": 36,
+      "stats_at_end": null,
+      "occupation_progression": ["从九品三班借职", "枢密院额外主事（武阶）", "枢密院副承旨（武阶从八品）"],
+      "choices": [
+        {"year": 1100, "choice": "上前劝解，卖个人情", "result": "成功调解虹桥冲突，获雷越山好感，受邀诗会"},
+        {"year": 1100, "choice": "立即示警，禀报主人", "result": "报告陈公后院盗贼，获陈公信任和赏识"},
+        {"year": 1101, "choice": "欣然应允，竭力办事", "result": "入枢密院任额外主事，积累人脉"},
+        {"year": 1103, "choice": "谦逊结交，化解敌意", "result": "设宴款待嫉妒的文吏，排挤减少，结识陈公外甥女柳氏"},
+        {"year": 1105, "choice": "向陈公提亲，求娶柳氏", "result": "提亲成功，联姻加深与陈公联盟"},
+        {"year": 1106, "choice": "欣然赴任，勤勉巡查", "result": "赴边镇巡查，归途遭流寇袭击身亡"}
+      ],
+      "achievements_unlocked": ["百战筋骨"],
+      "lessons_learned": [
+        "主动调解和示好是建立人脉的最佳策略",
+        "谦逊化敌比强硬对抗更有效",
+        "联姻是巩固人脉的好手段",
+        "赴边镇巡查虽忠于职守但有致命风险——应选择留京经营或找替代方案",
+        "1106年选'托病推辞，留京经营'可能存活更久",
+        "武将线路天然有战场死亡风险，需要更谨慎评估军事任务"
+      ],
+      "strategy": "圆融处世、广结人脉、稳步升迁、追求群像结局"
+    },
+    {
+      "id": 5,
+      "character": "马三",
+      "occupation_start": "脚夫",
+      "age_start": 33,
+      "year_start": 1100,
+      "ending": null,
+      "ending_type": null,
+      "year_end": null,
+      "age_end": null,
+      "status": "in_progress",
+      "current_year": 1104,
+      "current_age": 37,
+      "current_occupation": "道观庙祝",
+      "stats_at_end": null,
+      "occupation_progression": ["脚夫", "流民", "流民/垦殖者", "道观庙祝"],
+      "choices": [
+        {"year": 1100, "choice": "帮扶老翁", "result": "获得'心善'标签，老翁赠几文钱"},
+        {"year": 1100, "choice": "悄悄报官", "result": "铺兵敷衍了事，妇人仍受损失，获'窝生不甘'标签"},
+        {"year": 1100, "choice": "拉刘七同往（运货）", "result": "管事同意，增加连结"},
+        {"year": 1100, "choice": "严守嘱托（神秘运货）", "result": "成功交货获丰厚报酬，但卷入权贵漩涡"},
+        {"year": 1100, "choice": "帮刘七张罗亲事", "result": "刘七娶春娥，加深兄弟连结"},
+        {"year": 1101, "choice": "托媒提亲（秋菊）", "result": "提亲成功但聘金掏空家底"},
+        {"year": 1101, "choice": "寻旧日雇主相助", "result": "被要求偷张押司账册"},
+        {"year": 1101, "choice": "断然拒绝（偷账册）", "result": "保住清白但失去财路，秋菊被许配他人"},
+        {"year": 1101, "choice": "携母离京", "result": "南逃途中老母病逝，马三受伤沦为流民"},
+        {"year": 1102, "choice": "向同庙流民求助", "result": "获老汉、妇人、翠姐救助，建立新连结"},
+        {"year": 1102, "choice": "开荒互助", "result": "与同伴在废道观开垦薄地，渐渐安稳"},
+        {"year": 1103, "choice": "顺势应承（打理土地公庙）", "result": "获稳定收入，成为道观庙祝"},
+        {"year": 1104, "choice": "分化劝说（暴民围庙）", "result": "成功劝退部分暴民，官兵和贵人及时赶到"}
+      ],
+      "achievements_unlocked": [],
+      "lessons_learned": [
+        "帮助他人建立的人脉在危急时刻能救命（流民求助、分化劝说）",
+        "拒绝违法行为是正确的——张押司家果然被盗且遭官府严查",
+        "资财管理极重要：聘金掏空家底导致连锁困境",
+        "携母离京的时机选择需谨慎——老母体弱不堪路途颠簸",
+        "团结互助是从绝境中恢复的关键策略",
+        "人情值高时分化劝说比武力对抗更有效"
+      ],
+      "strategy": "重情义、团结互助、谨慎务实、避免违法、维系人脉连结"
+    }
+  ],
+  "global_knowledge": {
+    "game_title": "Into-the-Painting / 入画",
+    "setting": "北宋末年 (公元1100-1127年)",
+    "game_type": "文字冒险 / 生存模式",
+    "ending_types": {
+      "孤灯难明": "悲剧结局 - 连结不足，同伴全死",
+      "盗药失手毙于途": "悲剧结局 - 角色早死",
+      "群像结局": "好结局 - 需要多人连结且存活（未达成）"
+    },
+    "key_mechanics": [
+      "每3年一个选择点",
+      "属性：资财、势望、人情、心性",
+      "人情满值可解锁成就'八面玲珑'",
+      "资财归零触发成就'两袖清风'但角色会迅速衰亡",
+      "需要保持多人连结才能达成群像结局",
+      "靖康之变（1127年）是游戏终点"
+    ]
+  }
+}

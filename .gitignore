@@ -1,0 +1,14 @@
+# Environment variables (sensitive credentials)
+.env
+
+# IDE
+.vscode/
+
+# Browser user data (large, contains session cookies)
+artifacts/interactive-session/user-data/
+
+# Runner logs
+artifacts/interactive-session/runner.log
+
+# Notes with credentials
+notes.txt

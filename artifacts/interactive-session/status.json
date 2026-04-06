@@ -1,0 +1,16 @@
+{
+  "state": "ready",
+  "url": "https://play.fishframe.net/itp/",
+  "title": "Into-the-Painting",
+  "canvas": {
+    "width": 1440,
+    "height": 900,
+    "clientWidth": 1440,
+    "clientHeight": 900
+  },
+  "lastCommand": {
+    "id": "p5-627",
+    "command": "screenshot",
+    "name": "p5-1112-selected.png"
+  }
+}

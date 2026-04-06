@@ -1,0 +1,715 @@
+
+{"id": "net-001", "command": "screenshot", "name": "net-start.png"}
+{"id": "net-002", "command": "eval", "js": "(() => { const perf = performance.getEntriesByType('resource'); return { total_resources: perf.length, xhr_fetch: perf.filter(r => r.initiatorType === 'xmlhttprequest' || r.initiatorType === 'fetch').map(r => ({url: r.name, type: r.initiatorType})), websockets: perf.filter(r => r.name.startsWith('ws')).length, all_types: [...new Set(perf.map(r => r.initiatorType))] }; })()"}
+{"id": "net-003", "command": "eval", "js": "document.title"}
+{"id": "play-001", "command": "screenshot", "name": "play-current.png"}
+{"id": "play-010", "command": "press", "key": "Space"}
+{"id": "play-011", "command": "screenshot", "name": "play-eval-01.png"}
+{"id": "play-012", "command": "press", "key": "Space"}
+{"id": "play-013", "command": "screenshot", "name": "play-eval-02.png"}
+{"id": "play-014", "command": "press", "key": "Space"}
+{"id": "play-015", "command": "screenshot", "name": "play-eval-03.png"}
+{"id": "play-020", "command": "hover", "x": 384, "y": 642, "ms": 2000}
+{"id": "play-021", "command": "screenshot", "name": "play-h-c1.png"}
+{"id": "play-022", "command": "hover", "x": 608, "y": 703, "ms": 2000}
+{"id": "play-023", "command": "screenshot", "name": "play-h-c2.png"}
+{"id": "play-024", "command": "hover", "x": 810, "y": 730, "ms": 2000}
+{"id": "play-025", "command": "screenshot", "name": "play-h-c3.png"}
+{"id": "play-026", "command": "hover", "x": 1080, "y": 730, "ms": 2000}
+{"id": "play-027", "command": "screenshot", "name": "play-h-c4.png"}
+{"id": "play-030", "command": "click", "x": 810, "y": 730}
+{"id": "play-031", "command": "click", "x": 720, "y": 548}
+{"id": "play-032", "command": "screenshot", "name": "play-choice-result.png"}
+{"id": "play-040", "command": "press", "key": "Space"}
+{"id": "play-041", "command": "screenshot", "name": "play-eval-05.png"}
+{"id": "play-042", "command": "press", "key": "Space"}
+{"id": "play-043", "command": "screenshot", "name": "play-eval-06.png"}
+{"id": "play-044", "command": "press", "key": "Space"}
+{"id": "play-045", "command": "screenshot", "name": "play-eval-07.png"}
+{"id": "play-050", "command": "hover", "x": 384, "y": 642, "ms": 2000}
+{"id": "play-051", "command": "screenshot", "name": "play-h2-c1.png"}
+{"id": "play-052", "command": "hover", "x": 608, "y": 703, "ms": 2000}
+{"id": "play-053", "command": "screenshot", "name": "play-h2-c2.png"}
+{"id": "play-054", "command": "hover", "x": 810, "y": 730, "ms": 2000}
+{"id": "play-055", "command": "screenshot", "name": "play-h2-c3.png"}
+{"id": "play-056", "command": "hover", "x": 1080, "y": 730, "ms": 2000}
+{"id": "play-057", "command": "screenshot", "name": "play-h2-c4.png"}
+{"id": "play-060", "command": "click", "x": 810, "y": 730}
+{"id": "play-061", "command": "click", "x": 720, "y": 548}
+{"id": "play-062", "command": "screenshot", "name": "play-escape.png"}
+{"id": "play-070", "command": "click", "x": 720, "y": 548}
+{"id": "play-071", "command": "screenshot", "name": "play-ending.png"}
+{"id": "play-072", "command": "click", "x": 650, "y": 578}
+{"id": "play-074", "command": "click", "x": 724, "y": 505}
+{"id": "play-075", "command": "screenshot", "name": "play-ok-exact.png"}
+{"id": "play-074", "command": "click", "x": 724, "y": 505}
+{"id": "play-075", "command": "screenshot", "name": "play-ok-exact.png"}
+{"id":"p4-001","command":"screenshot","name":"p4-start.png"}
+{"id":"p4-002","command":"press","key":"Space"}
+{"id":"p4-003","command":"screenshot","name":"p4-002.png"}
+{"id":"p4-004","command":"press","key":"Space"}
+{"id":"p4-005","command":"screenshot","name":"p4-003.png"}
+{"id":"p4-006","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p4-007","command":"screenshot","name":"p4-card1.png"}
+{"id":"p4-008","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p4-009","command":"screenshot","name":"p4-card2.png"}
+{"id":"p4-010","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p4-011","command":"screenshot","name":"p4-card3.png"}
+{"id":"p4-012","command":"click","x":350,"y":730}
+{"id":"p4-013","command":"screenshot","name":"p4-confirm1.png"}
+{"id":"p4-014","command":"press","key":"Space"}
+{"id":"p4-015","command":"screenshot","name":"p4-004.png"}
+{"id":"p4-016","command":"press","key":"Space"}
+{"id":"p4-017","command":"screenshot","name":"p4-005.png"}
+{"id":"p4-018","command":"press","key":"Space"}
+{"id":"p4-019","command":"screenshot","name":"p4-006.png"}
+{"id":"p4-020","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p4-021","command":"screenshot","name":"p4-card2-1.png"}
+{"id":"p4-022","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p4-023","command":"screenshot","name":"p4-card2-2.png"}
+{"id":"p4-024","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p4-025","command":"screenshot","name":"p4-card2-3.png"}
+{"id":"p4-026","command":"click","x":670,"y":770}
+{"id":"p4-027","command":"screenshot","name":"p4-after-choice2.png"}
+{"id":"p4-028","command":"press","key":"Space"}
+{"id":"p4-029","command":"screenshot","name":"p4-007.png"}
+{"id":"p4-030","command":"press","key":"Space"}
+{"id":"p4-031","command":"screenshot","name":"p4-008.png"}
+{"id":"p4-032","command":"press","key":"Space"}
+{"id":"p4-033","command":"screenshot","name":"p4-009.png"}
+{"id":"p4-034","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p4-035","command":"screenshot","name":"p4-card3-1.png"}
+{"id":"p4-036","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p4-037","command":"screenshot","name":"p4-card3-2.png"}
+{"id":"p4-038","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p4-039","command":"screenshot","name":"p4-card3-3.png"}
+{"id":"p4-040","command":"click","x":350,"y":730}
+{"id":"p4-041","command":"screenshot","name":"p4-010.png"}
+{"id":"p4-042","command":"press","key":"Space"}
+{"id":"p4-043","command":"screenshot","name":"p4-011.png"}
+{"id":"p4-044","command":"press","key":"Space"}
+{"id":"p4-045","command":"screenshot","name":"p4-012.png"}
+{"id":"p4-046","command":"press","key":"Space"}
+{"id":"p4-047","command":"screenshot","name":"p4-013.png"}
+{"id":"p4-048","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p4-049","command":"screenshot","name":"p4-card4-1.png"}
+{"id":"p4-050","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p4-051","command":"screenshot","name":"p4-card4-2.png"}
+{"id":"p4-052","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p4-053","command":"screenshot","name":"p4-card4-3.png"}
+{"id":"p4-054","command":"click","x":350,"y":730}
+{"id":"p4-055","command":"screenshot","name":"p4-014.png"}
+{"id":"p4-056","command":"press","key":"Space"}
+{"id":"p4-057","command":"screenshot","name":"p4-015.png"}
+{"id":"p4-058","command":"press","key":"Space"}
+{"id":"p4-059","command":"screenshot","name":"p4-016.png"}
+{"id":"p4-060","command":"press","key":"Space"}
+{"id":"p4-061","command":"screenshot","name":"p4-017.png"}
+{"id":"p4-062","command":"press","key":"Space"}
+{"id":"p4-063","command":"screenshot","name":"p4-018.png"}
+{"id":"p4-064","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p4-065","command":"screenshot","name":"p4-card5-1.png"}
+{"id":"p4-066","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p4-067","command":"screenshot","name":"p4-card5-2.png"}
+{"id":"p4-068","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p4-069","command":"screenshot","name":"p4-card5-3.png"}
+{"id":"p4-070","command":"click","x":350,"y":730}
+{"id":"p4-071","command":"screenshot","name":"p4-019.png"}
+{"id":"p4-072","command":"press","key":"Space"}
+{"id":"p4-073","command":"screenshot","name":"p4-020.png"}
+{"id":"p4-074","command":"press","key":"Space"}
+{"id":"p4-075","command":"screenshot","name":"p4-021.png"}
+{"id":"p4-076","command":"press","key":"Space"}
+{"id":"p4-077","command":"screenshot","name":"p4-022.png"}
+{"id":"p4-078","command":"press","key":"Space"}
+{"id":"p4-079","command":"screenshot","name":"p4-023.png"}
+{"id":"p4-080","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p4-081","command":"screenshot","name":"p4-card6-1.png"}
+{"id":"p4-082","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p4-083","command":"screenshot","name":"p4-card6-2.png"}
+{"id":"p4-084","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p4-085","command":"screenshot","name":"p4-card6-3.png"}
+{"id":"p4-086","command":"click","x":350,"y":730}
+{"id":"p4-087","command":"screenshot","name":"p4-024.png"}
+{"id":"p4-088","command":"click","x":1390,"y":870}
+{"id":"p4-089","command":"screenshot","name":"p4-025.png"}
+{"id":"p4-090","command":"click","x":724,"y":505}
+{"id":"p4-091","command":"screenshot","name":"p4-026.png"}
+{"id":"p4-092","command":"click","x":724,"y":505}
+{"id":"p4-093","command":"screenshot","name":"p4-027.png"}
+{"id":"p4-094","command":"click","x":720,"y":548}
+{"id":"p4-095","command":"screenshot","name":"p4-028.png"}
+{"id":"p4-096","command":"screenshot","name":"p4-029.png"}
+{"id":"p4-097","command":"click","x":720,"y":581}
+{"id":"p4-098","command":"screenshot","name":"p4-030.png"}
+{"id":"p4-099","command":"press","key":"Space"}
+{"id":"p5-001","command":"screenshot","name":"p5-001.png"}
+{"id":"p5-002","command":"press","key":"Space"}
+{"id":"p5-003","command":"screenshot","name":"p5-002.png"}
+{"id":"p5-004","command":"press","key":"Space"}
+{"id":"p5-005","command":"screenshot","name":"p5-003.png"}
+{"id":"p5-006","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-007","command":"screenshot","name":"p5-card1-1.png"}
+{"id":"p5-008","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-009","command":"screenshot","name":"p5-card1-2.png"}
+{"id":"p5-010","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-011","command":"screenshot","name":"p5-card1-3.png"}
+{"id":"p5-012","command":"click","x":1030,"y":730}
+{"id":"p5-013","command":"screenshot","name":"p5-004.png"}
+{"id":"p5-014","command":"press","key":"Space"}
+{"id":"p5-015","command":"screenshot","name":"p5-005.png"}
+{"id":"p5-016","command":"press","key":"Space"}
+{"id":"p5-017","command":"screenshot","name":"p5-006.png"}
+{"id":"p5-018","command":"press","key":"Space"}
+{"id":"p5-019","command":"screenshot","name":"p5-007.png"}
+{"id":"p5-020","command":"press","key":"Space"}
+{"id":"p5-021","command":"screenshot","name":"p5-008.png"}
+{"id":"p5-022","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-023","command":"screenshot","name":"p5-card2-1.png"}
+{"id":"p5-024","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-025","command":"screenshot","name":"p5-card2-2.png"}
+{"id":"p5-026","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-027","command":"screenshot","name":"p5-card2-3.png"}
+{"id":"p5-028","command":"click","x":670,"y":770}
+{"id":"p5-029","command":"screenshot","name":"p5-009.png"}
+{"id":"p5-030","command":"press","key":"Space"}
+{"id":"p5-031","command":"screenshot","name":"p5-010.png"}
+{"id":"p5-032","command":"press","key":"Space"}
+{"id":"p5-033","command":"screenshot","name":"p5-011.png"}
+{"id":"p5-034","command":"press","key":"Space"}
+{"id":"p5-035","command":"screenshot","name":"p5-012.png"}
+{"id":"p5-036","command":"press","key":"Space"}
+{"id":"p5-037","command":"screenshot","name":"p5-013.png"}
+{"id":"p5-038","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-039","command":"screenshot","name":"p5-card3-1.png"}
+{"id":"p5-040","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-041","command":"screenshot","name":"p5-card3-2.png"}
+{"id":"p5-042","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-043","command":"screenshot","name":"p5-card3-3.png"}
+{"id":"p5-043","command":"screenshot","name":"p5-card3-3.png"}
+{"id":"p5-044","command":"click","x":1030,"y":730}
+{"id":"p5-045","command":"screenshot","name":"p5-014.png"}
+{"id":"p5-046","command":"press","key":"Space"}
+{"id":"p5-047","command":"screenshot","name":"p5-015.png"}
+{"id":"p5-048","command":"press","key":"Space"}
+{"id":"p5-049","command":"screenshot","name":"p5-016.png"}
+{"id":"p5-050","command":"press","key":"Space"}
+{"id":"p5-051","command":"screenshot","name":"p5-017.png"}
+{"id":"p5-052","command":"press","key":"Space"}
+{"id":"p5-053","command":"screenshot","name":"p5-018.png"}
+{"id":"p5-054","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-055","command":"screenshot","name":"p5-card4-1.png"}
+{"id":"p5-056","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-057","command":"screenshot","name":"p5-card4-2.png"}
+{"id":"p5-058","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-059","command":"screenshot","name":"p5-card4-3.png"}
+{"id":"p5-060","command":"click","x":350,"y":730}
+{"id":"p5-061","command":"screenshot","name":"p5-019.png"}
+{"id":"p5-062","command":"press","key":"Space"}
+{"id":"p5-063","command":"screenshot","name":"p5-020.png"}
+{"id":"p5-064","command":"press","key":"Space"}
+{"id":"p5-065","command":"screenshot","name":"p5-021.png"}
+{"id":"p5-066","command":"press","key":"Space"}
+{"id":"p5-067","command":"screenshot","name":"p5-022.png"}
+{"id":"p5-068","command":"press","key":"Space"}
+{"id":"p5-069","command":"screenshot","name":"p5-023.png"}
+{"id":"p5-070a","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-070b","command":"screenshot","name":"p5-card5-070.png"}
+{"id":"p5-071a","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-071b","command":"screenshot","name":"p5-card5-071.png"}
+{"id":"p5-072a","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-072b","command":"screenshot","name":"p5-card5-072.png"}
+{"id":"p5-073","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-074","command":"screenshot","name":"p5-card5-3.png"}
+{"id":"p5-075","command":"click","x":1030,"y":730}
+{"id":"p5-076","command":"screenshot","name":"p5-024.png"}
+{"id":"p5-077","command":"press","key":"Space"}
+{"id":"p5-078","command":"screenshot","name":"p5-025.png"}
+{"id":"p5-079","command":"press","key":"Space"}
+{"id":"p5-080","command":"screenshot","name":"p5-026.png"}
+{"id":"p5-081","command":"press","key":"Space"}
+{"id":"p5-082","command":"screenshot","name":"p5-027.png"}
+{"id":"p5-083","command":"press","key":"Space"}
+{"id":"p5-084","command":"screenshot","name":"p5-028.png"}
+{"id":"p5-085","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-086","command":"screenshot","name":"p5-card6-1.png"}
+{"id":"p5-087","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-088","command":"screenshot","name":"p5-card6-2.png"}
+{"id":"p5-089","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-090","command":"screenshot","name":"p5-card6-3.png"}
+{"id":"p5-091","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-092","command":"screenshot","name":"p5-card6-3b.png"}
+{"id":"p5-093","command":"click","x":1030,"y":730}
+{"id":"p5-094","command":"screenshot","name":"p5-029.png"}
+{"id":"p5-095","command":"press","key":"Space"}
+{"id":"p5-096","command":"screenshot","name":"p5-030.png"}
+{"id":"p5-097","command":"press","key":"Space"}
+{"id":"p5-098","command":"screenshot","name":"p5-031.png"}
+{"id":"p5-099","command":"press","key":"Space"}
+{"id":"p5-100","command":"screenshot","name":"p5-032.png"}
+{"id":"p5-101","command":"press","key":"Space"}
+{"id":"p5-102","command":"screenshot","name":"p5-033.png"}
+{"id":"p5-103","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-104","command":"screenshot","name":"p5-card7-1.png"}
+{"id":"p5-105","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-106","command":"screenshot","name":"p5-card7-2.png"}
+{"id":"p5-107","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-108","command":"screenshot","name":"p5-card7-3.png"}
+{"id":"p5-109","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-110","command":"screenshot","name":"p5-card7-3b.png"}
+{"id":"p5-111","command":"click","x":1030,"y":730}
+{"id":"p5-112","command":"screenshot","name":"p5-034.png"}
+{"id":"p5-113","command":"press","key":"Space"}
+{"id":"p5-114","command":"screenshot","name":"p5-035.png"}
+{"id":"p5-115","command":"press","key":"Space"}
+{"id":"p5-116","command":"screenshot","name":"p5-036.png"}
+{"id":"p5-117","command":"press","key":"Space"}
+{"id":"p5-118","command":"screenshot","name":"p5-037.png"}
+{"id":"p5-119","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-120","command":"screenshot","name":"p5-card8-1.png"}
+{"id":"p5-121","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-122","command":"screenshot","name":"p5-card8-2.png"}
+{"id":"p5-123","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-124","command":"screenshot","name":"p5-card8-3.png"}
+{"id":"p5-125","command":"click","x":670,"y":770}
+{"id":"p5-126","command":"screenshot","name":"p5-038.png"}
+{"id":"p5-127","command":"press","key":"Space"}
+{"id":"p5-128","command":"screenshot","name":"p5-039.png"}
+{"id":"p5-129","command":"press","key":"Space"}
+{"id":"p5-130","command":"screenshot","name":"p5-040.png"}
+{"id":"p5-131","command":"press","key":"Space"}
+{"id":"p5-132","command":"screenshot","name":"p5-041.png"}
+{"id":"p5-133","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-134","command":"screenshot","name":"p5-card9-1.png"}
+{"id":"p5-135","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-136","command":"screenshot","name":"p5-card9-2.png"}
+{"id":"p5-137","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-138","command":"screenshot","name":"p5-card9-3.png"}
+{"id":"p5-139","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-140","command":"screenshot","name":"p5-card9-3b.png"}
+{"id":"p5-141","command":"click","x":670,"y":770}
+{"id":"p5-142","command":"screenshot","name":"p5-042.png"}
+{"id":"p5-143","command":"press","key":"Space"}
+{"id":"p5-144","command":"screenshot","name":"p5-043.png"}
+{"id":"p5-145","command":"press","key":"Space"}
+{"id":"p5-146","command":"screenshot","name":"p5-044.png"}
+{"id":"p5-147","command":"press","key":"Space"}
+{"id":"p5-148","command":"screenshot","name":"p5-045.png"}
+{"id":"p5-149","command":"press","key":"Space"}
+{"id":"p5-150","command":"screenshot","name":"p5-046.png"}
+{"id":"p5-151","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-152","command":"screenshot","name":"p5-card10-1.png"}
+{"id":"p5-153","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-154","command":"screenshot","name":"p5-card10-2.png"}
+{"id":"p5-155","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-156","command":"screenshot","name":"p5-card10-3.png"}
+{"id":"p5-157","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-158","command":"screenshot","name":"p5-card10-3b.png"}
+{"id":"p5-159","command":"click","x":350,"y":730}
+{"id":"p5-160","command":"screenshot","name":"p5-047.png"}
+{"id":"p5-161","command":"press","key":"Space"}
+{"id":"p5-162","command":"screenshot","name":"p5-048.png"}
+{"id":"p5-163","command":"press","key":"Space"}
+{"id":"p5-164","command":"screenshot","name":"p5-049.png"}
+{"id":"p5-165","command":"press","key":"Space"}
+{"id":"p5-166","command":"screenshot","name":"p5-050.png"}
+{"id":"p5-167","command":"press","key":"Space"}
+{"id":"p5-168","command":"screenshot","name":"p5-051.png"}
+{"id":"p5-169","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-170","command":"screenshot","name":"p5-card11-1.png"}
+{"id":"p5-171","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-172","command":"screenshot","name":"p5-card11-2.png"}
+{"id":"p5-173","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-174","command":"screenshot","name":"p5-card11-3.png"}
+{"id":"p5-175","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-176","command":"screenshot","name":"p5-card11-3b.png"}
+{"id":"p5-177","command":"click","x":350,"y":730}
+{"id":"p5-178","command":"screenshot","name":"p5-052.png"}
+{"id":"p5-179","command":"press","key":"Space"}
+{"id":"p5-180","command":"screenshot","name":"p5-053.png"}
+{"id":"p5-181","command":"press","key":"Space"}
+{"id":"p5-182","command":"screenshot","name":"p5-054.png"}
+{"id":"p5-183","command":"press","key":"Space"}
+{"id":"p5-184","command":"screenshot","name":"p5-055.png"}
+{"id":"p5-185","command":"press","key":"Space"}
+{"id":"p5-186","command":"screenshot","name":"p5-056.png"}
+{"id":"p5-187","command":"press","key":"Space"}
+{"id":"p5-188","command":"screenshot","name":"p5-057.png"}
+{"id":"p5-189","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-190","command":"screenshot","name":"p5-card12-1.png"}
+{"id":"p5-191","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-192","command":"screenshot","name":"p5-card12-2.png"}
+{"id":"p5-193","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-194","command":"screenshot","name":"p5-card12-3.png"}
+{"id":"p5-195","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-196","command":"screenshot","name":"p5-card12-3b.png"}
+{"id":"p5-197","command":"click","x":350,"y":730}
+{"id":"p5-198","command":"screenshot","name":"p5-058.png"}
+{"id":"p5-199","command":"press","key":"Space"}
+{"id":"p5-200","command":"screenshot","name":"p5-059.png"}
+{"id":"p5-201","command":"press","key":"Space"}
+{"id":"p5-202","command":"screenshot","name":"p5-060.png"}
+{"id":"p5-203","command":"press","key":"Space"}
+{"id":"p5-204","command":"screenshot","name":"p5-061.png"}
+{"id":"p5-205","command":"press","key":"Space"}
+{"id":"p5-206","command":"screenshot","name":"p5-062.png"}
+{"id":"p5-207","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-208","command":"screenshot","name":"p5-card13-1.png"}
+{"id":"p5-209","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-210","command":"screenshot","name":"p5-card13-2.png"}
+{"id":"p5-211","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-212","command":"screenshot","name":"p5-card13-3.png"}
+{"id":"p5-213","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-214","command":"screenshot","name":"p5-card13-3b.png"}
+{"id":"p5-215","command":"click","x":670,"y":770}
+{"id":"p5-216","command":"screenshot","name":"p5-063.png"}
+{"id":"p5-217","command":"press","key":"Space"}
+{"id":"p5-218","command":"screenshot","name":"p5-064.png"}
+{"id":"p5-219","command":"press","key":"Space"}
+{"id":"p5-220","command":"screenshot","name":"p5-065.png"}
+{"id":"p5-221","command":"press","key":"Space"}
+{"id":"p5-222","command":"press","key":"Space"}
+{"id":"p5-223","command":"press","key":"Space"}
+{"id":"p5-224","command":"press","key":"Space"}
+{"id":"p5-225","command":"press","key":"Space"}
+{"id":"p5-226","command":"press","key":"Space"}
+{"id":"p5-227","command":"screenshot","name":"p5-066.png"}
+{"id":"p5-228","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-229","command":"screenshot","name":"p5-card14-1.png"}
+{"id":"p5-230","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-231","command":"screenshot","name":"p5-card14-2.png"}
+{"id":"p5-232","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-233","command":"screenshot","name":"p5-card14-3.png"}
+{"id":"p5-234","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-235","command":"screenshot","name":"p5-card14-3b.png"}
+{"id":"p5-236","command":"click","x":670,"y":770}
+{"id":"p5-237","command":"screenshot","name":"p5-067.png"}
+{"id":"p5-238","command":"press","key":"Space"}
+{"id":"p5-239","command":"screenshot","name":"p5-068.png"}
+{"id":"p5-240","command":"press","key":"Space"}
+{"id":"p5-241","command":"screenshot","name":"p5-069.png"}
+{"id":"p5-242","command":"press","key":"Space"}
+{"id":"p5-243","command":"press","key":"Space"}
+{"id":"p5-244","command":"press","key":"Space"}
+{"id":"p5-245","command":"press","key":"Space"}
+{"id":"p5-246","command":"press","key":"Space"}
+{"id":"p5-247","command":"screenshot","name":"p5-070.png"}
+{"id":"p5-248","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-249","command":"screenshot","name":"p5-card15-1.png"}
+{"id":"p5-250","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-251","command":"screenshot","name":"p5-card15-2.png"}
+{"id":"p5-252","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-253","command":"screenshot","name":"p5-card15-3.png"}
+{"id":"p5-254","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-255","command":"screenshot","name":"p5-card15-3b.png"}
+{"id":"p5-256","command":"click","x":670,"y":770}
+{"id":"p5-257","command":"screenshot","name":"p5-071.png"}
+{"id":"p5-258","command":"press","key":"Space"}
+{"id":"p5-259","command":"press","key":"Space"}
+{"id":"p5-260","command":"press","key":"Space"}
+{"id":"p5-261","command":"press","key":"Space"}
+{"id":"p5-262","command":"press","key":"Space"}
+{"id":"p5-263","command":"screenshot","name":"p5-072.png"}
+{"id":"p5-264","command":"press","key":"Space"}
+{"id":"p5-265","command":"press","key":"Space"}
+{"id":"p5-266","command":"press","key":"Space"}
+{"id":"p5-267","command":"screenshot","name":"p5-073.png"}
+{"id":"p5-268","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-269","command":"screenshot","name":"p5-card16-1.png"}
+{"id":"p5-270","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-271","command":"screenshot","name":"p5-card16-2.png"}
+{"id":"p5-272","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-273","command":"screenshot","name":"p5-card16-3.png"}
+{"id":"p5-274","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-275","command":"screenshot","name":"p5-card16-3b.png"}
+{"id":"p5-276","command":"click","x":670,"y":770}
+{"id":"p5-277","command":"screenshot","name":"p5-074.png"}
+{"id":"p5-278","command":"click","x":1390,"y":870}
+{"id":"p5-279","command":"screenshot","name":"p5-075.png"}
+{"id":"p5-280","command":"press","key":"Space"}
+{"id":"p5-281","command":"press","key":"Space"}
+{"id":"p5-282","command":"press","key":"Space"}
+{"id":"p5-283","command":"press","key":"Space"}
+{"id":"p5-284","command":"press","key":"Space"}
+{"id":"p5-285","command":"screenshot","name":"p5-076.png"}
+{"id":"p5-286","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-287","command":"screenshot","name":"p5-card17-1.png"}
+{"id":"p5-288","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-289","command":"screenshot","name":"p5-card17-2.png"}
+{"id":"p5-290","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-291","command":"screenshot","name":"p5-card17-3.png"}
+{"id":"p5-292","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-293","command":"screenshot","name":"p5-card17-3b.png"}
+{"id":"p5-294","command":"click","x":350,"y":730}
+{"id":"p5-295","command":"screenshot","name":"p5-077.png"}
+{"id":"p5-296","command":"press","key":"Space"}
+{"id":"p5-297","command":"press","key":"Space"}
+{"id":"p5-298","command":"press","key":"Space"}
+{"id":"p5-299","command":"press","key":"Space"}
+{"id":"p5-300","command":"press","key":"Space"}
+{"id":"p5-301","command":"screenshot","name":"p5-078.png"}
+{"id":"p5-302","command":"press","key":"Space"}
+{"id":"p5-303","command":"press","key":"Space"}
+{"id":"p5-304","command":"press","key":"Space"}
+{"id":"p5-305","command":"press","key":"Space"}
+{"id":"p5-306","command":"press","key":"Space"}
+{"id":"p5-307","command":"screenshot","name":"p5-079.png"}
+{"id":"p5-308","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-309","command":"screenshot","name":"p5-card18-1.png"}
+{"id":"p5-310","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-311","command":"screenshot","name":"p5-card18-2.png"}
+{"id":"p5-312","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-313","command":"screenshot","name":"p5-card18-3.png"}
+{"id":"p5-314","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-315","command":"screenshot","name":"p5-card18-3b.png"}
+{"id":"p5-316","command":"click","x":350,"y":730}
+{"id":"p5-317","command":"screenshot","name":"p5-080.png"}
+{"id":"p5-318","command":"press","key":"Space"}
+{"id":"p5-319","command":"press","key":"Space"}
+{"id":"p5-320","command":"press","key":"Space"}
+{"id":"p5-321","command":"press","key":"Space"}
+{"id":"p5-322","command":"press","key":"Space"}
+{"id":"p5-323","command":"press","key":"Space"}
+{"id":"p5-324","command":"press","key":"Space"}
+{"id":"p5-325","command":"screenshot","name":"p5-081.png"}
+{"id":"p5-326","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-327","command":"screenshot","name":"p5-card19-1.png"}
+{"id":"p5-328","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-329","command":"screenshot","name":"p5-card19-2.png"}
+{"id":"p5-330","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-331","command":"screenshot","name":"p5-card19-3.png"}
+{"id":"p5-332","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-333","command":"screenshot","name":"p5-card19-3b.png"}
+{"id":"p5-334","command":"click","x":670,"y":770}
+{"id":"p5-335","command":"press","key":"Space"}
+{"id":"p5-336","command":"press","key":"Space"}
+{"id":"p5-337","command":"press","key":"Space"}
+{"id":"p5-338","command":"press","key":"Space"}
+{"id":"p5-339","command":"press","key":"Space"}
+{"id":"p5-340","command":"press","key":"Space"}
+{"id":"p5-341","command":"screenshot","name":"p5-082.png"}
+{"id":"p5-342","command":"press","key":"Space"}
+{"id":"p5-343","command":"press","key":"Space"}
+{"id":"p5-344","command":"press","key":"Space"}
+{"id":"p5-345","command":"press","key":"Space"}
+{"id":"p5-346","command":"press","key":"Space"}
+{"id":"p5-347","command":"screenshot","name":"p5-083.png"}
+{"id":"p5-348","command":"wait","ms":3000}
+{"id":"p5-349","command":"screenshot","name":"p5-084.png"}
+{"id":"p5-350","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-351","command":"screenshot","name":"p5-card20-1.png"}
+{"id":"p5-352","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-353","command":"screenshot","name":"p5-card20-2.png"}
+{"id":"p5-354","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-355","command":"screenshot","name":"p5-card20-3.png"}
+{"id":"p5-356","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-357","command":"screenshot","name":"p5-card20-3b.png"}
+{"id":"p5-358","command":"click","x":670,"y":770}
+{"id":"p5-359","command":"press","key":"Space"}
+{"id":"p5-360","command":"press","key":"Space"}
+{"id":"p5-361","command":"press","key":"Space"}
+{"id":"p5-362","command":"press","key":"Space"}
+{"id":"p5-363","command":"press","key":"Space"}
+{"id":"p5-364","command":"press","key":"Space"}
+{"id":"p5-365","command":"press","key":"Space"}
+{"id":"p5-366","command":"press","key":"Space"}
+{"id":"p5-367","command":"screenshot","name":"p5-085.png"}
+{"id":"p5-368","command":"press","key":"Space"}
+{"id":"p5-369","command":"press","key":"Space"}
+{"id":"p5-370","command":"press","key":"Space"}
+{"id":"p5-371","command":"press","key":"Space"}
+{"id":"p5-372","command":"press","key":"Space"}
+{"id":"p5-373","command":"screenshot","name":"p5-086.png"}
+{"id":"p5-374","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-375","command":"screenshot","name":"p5-card21-1.png"}
+{"id":"p5-376","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-377","command":"screenshot","name":"p5-card21-2.png"}
+{"id":"p5-378","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-379","command":"screenshot","name":"p5-card21-3.png"}
+{"id":"p5-380","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-381","command":"screenshot","name":"p5-card21-3b.png"}
+{"id":"p5-382","command":"click","x":350,"y":730}
+{"id":"p5-383","command":"press","key":"Space"}
+{"id":"p5-384","command":"press","key":"Space"}
+{"id":"p5-385","command":"press","key":"Space"}
+{"id":"p5-386","command":"press","key":"Space"}
+{"id":"p5-387","command":"press","key":"Space"}
+{"id":"p5-388","command":"press","key":"Space"}
+{"id":"p5-389","command":"press","key":"Space"}
+{"id":"p5-390","command":"press","key":"Space"}
+{"id":"p5-391","command":"screenshot","name":"p5-087.png"}
+{"id":"p5-392","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-393","command":"screenshot","name":"p5-card22-1.png"}
+{"id":"p5-394","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-395","command":"screenshot","name":"p5-card22-2.png"}
+{"id":"p5-396","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-397","command":"screenshot","name":"p5-card22-3.png"}
+{"id":"p5-398","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-399","command":"screenshot","name":"p5-card22-3b.png"}
+{"id":"p5-400","command":"click","x":670,"y":770}
+{"id":"p5-401","command":"press","key":"Space"}
+{"id":"p5-402","command":"press","key":"Space"}
+{"id":"p5-403","command":"press","key":"Space"}
+{"id":"p5-404","command":"press","key":"Space"}
+{"id":"p5-405","command":"press","key":"Space"}
+{"id":"p5-406","command":"press","key":"Space"}
+{"id":"p5-407","command":"press","key":"Space"}
+{"id":"p5-408","command":"press","key":"Space"}
+{"id":"p5-409","command":"screenshot","name":"p5-088.png"}
+{"id":"p5-410","command":"press","key":"Space"}
+{"id":"p5-411","command":"press","key":"Space"}
+{"id":"p5-412","command":"press","key":"Space"}
+{"id":"p5-413","command":"press","key":"Space"}
+{"id":"p5-414","command":"press","key":"Space"}
+{"id":"p5-415","command":"screenshot","name":"p5-089.png"}
+{"id":"p5-416","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-417","command":"screenshot","name":"p5-card23-1.png"}
+{"id":"p5-418","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-419","command":"screenshot","name":"p5-card23-2.png"}
+{"id":"p5-420","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-421","command":"screenshot","name":"p5-card23-3.png"}
+{"id":"p5-422","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-423","command":"screenshot","name":"p5-card23-3b.png"}
+{"id":"p5-424","command":"click","x":670,"y":770}
+{"id":"p5-425","command":"press","key":"Space"}
+{"id":"p5-426","command":"press","key":"Space"}
+{"id":"p5-427","command":"press","key":"Space"}
+{"id":"p5-428","command":"press","key":"Space"}
+{"id":"p5-429","command":"press","key":"Space"}
+{"id":"p5-430","command":"press","key":"Space"}
+{"id":"p5-431","command":"press","key":"Space"}
+{"id":"p5-432","command":"press","key":"Space"}
+{"id":"p5-433","command":"screenshot","name":"p5-090.png"}
+{"id":"p5-434","command":"press","key":"Space"}
+{"id":"p5-435","command":"press","key":"Space"}
+{"id":"p5-436","command":"press","key":"Space"}
+{"id":"p5-437","command":"press","key":"Space"}
+{"id":"p5-438","command":"press","key":"Space"}
+{"id":"p5-439","command":"screenshot","name":"p5-091.png"}
+{"id":"p5-440","command":"hover","x":350,"y":730,"ms":2000}
+{"id":"p5-441","command":"screenshot","name":"p5-card24-1.png"}
+{"id":"p5-442","command":"hover","x":670,"y":770,"ms":2000}
+{"id":"p5-443","command":"screenshot","name":"p5-card24-2.png"}
+{"id":"p5-444","command":"hover","x":1030,"y":730,"ms":2000}
+{"id":"p5-445","command":"screenshot","name":"p5-card24-3.png"}
+{"id": "p5-450", "command": "hover", "x": 384, "y": 642, "ms": 1500}
+{"id": "p5-451", "command": "screenshot", "name": "p5-card-bribe1.png"}
+{"id": "p5-452", "command": "hover", "x": 608, "y": 703, "ms": 1500}
+{"id": "p5-453", "command": "screenshot", "name": "p5-card-bribe2.png"}
+{"id": "p5-454", "command": "hover", "x": 590, "y": 710, "ms": 1500}
+{"id": "p5-455", "command": "screenshot", "name": "p5-card-bribe2b.png"}
+{"id": "p5-456", "command": "hover", "x": 810, "y": 730, "ms": 1500}
+{"id": "p5-457", "command": "screenshot", "name": "p5-card-bribe3.png"}
+{"id": "p5-460", "command": "eval", "js": "document.addEventListener('mousemove', e => document.title = e.clientX + ',' + e.clientY); 'listener added'"}
+{"id": "p5-461", "command": "hover", "x": 370, "y": 700, "ms": 1200}
+{"id": "p5-462", "command": "screenshot", "name": "p5-scan1.png"}
+{"id": "p5-463", "command": "hover", "x": 560, "y": 720, "ms": 1200}
+{"id": "p5-464", "command": "screenshot", "name": "p5-scan2.png"}
+{"id": "p5-465", "command": "hover", "x": 780, "y": 710, "ms": 1200}
+{"id": "p5-466", "command": "screenshot", "name": "p5-scan3.png"}
+{"id": "p5-467", "command": "hover", "x": 1050, "y": 700, "ms": 1200}
+{"id": "p5-468", "command": "screenshot", "name": "p5-scan4.png"}
+{"id": "p5-470", "command": "hover", "x": 670, "y": 770, "ms": 1500}
+{"id": "p5-471", "command": "screenshot", "name": "p5-mid-card.png"}
+{"id": "p5-472", "command": "hover", "x": 1030, "y": 730, "ms": 1500}
+{"id": "p5-473", "command": "screenshot", "name": "p5-right-card.png"}
+{"id": "p5-475", "command": "click", "x": 370, "y": 700}
+{"id": "p5-476", "command": "wait", "ms": 1500}
+{"id": "p5-477", "command": "screenshot", "name": "p5-choice-preview.png"}
+{"id": "p5-480", "command": "press", "key": "Space"}
+{"id": "p5-481", "command": "wait", "ms": 2000}
+{"id": "p5-482", "command": "screenshot", "name": "p5-after-choice.png"}
+{"id": "p5-485", "command": "press", "key": "Space"}
+{"id": "p5-486", "command": "wait", "ms": 2000}
+{"id": "p5-487", "command": "press", "key": "Space"}
+{"id": "p5-488", "command": "wait", "ms": 2000}
+{"id": "p5-489", "command": "press", "key": "Space"}
+{"id": "p5-490", "command": "wait", "ms": 2000}
+{"id": "p5-491", "command": "screenshot", "name": "p5-advance2.png"}
+{"id": "p5-495", "command": "press", "key": "Space"}
+{"id": "p5-496", "command": "wait", "ms": 2500}
+{"id": "p5-497", "command": "press", "key": "Space"}
+{"id": "p5-498", "command": "wait", "ms": 2500}
+{"id": "p5-499", "command": "press", "key": "Space"}
+{"id": "p5-500", "command": "wait", "ms": 2500}
+{"id": "p5-501", "command": "press", "key": "Space"}
+{"id": "p5-502", "command": "wait", "ms": 2500}
+{"id": "p5-503", "command": "screenshot", "name": "p5-advance3.png"}
+{"id": "p5-505", "command": "click", "x": 720, "y": 450}
+{"id": "p5-506", "command": "wait", "ms": 3000}
+{"id": "p5-507", "command": "screenshot", "name": "p5-advance4a.png"}
+{"id": "p5-508", "command": "press", "key": "Space"}
+{"id": "p5-509", "command": "wait", "ms": 3000}
+{"id": "p5-510", "command": "screenshot", "name": "p5-advance4b.png"}
+{"id": "p5-511", "command": "press", "key": "Space"}
+{"id": "p5-512", "command": "wait", "ms": 3000}
+{"id": "p5-513", "command": "screenshot", "name": "p5-advance4c.png"}
+{"id": "p5-520", "command": "screenshot", "name": "p5-relogin.png"}
+{"id": "p5-525", "command": "press", "key": "Space"}
+{"id": "p5-526", "command": "wait", "ms": 2500}
+{"id": "p5-527", "command": "screenshot", "name": "p5-story1.png"}
+{"id": "p5-530", "command": "press", "key": "Space"}
+{"id": "p5-531", "command": "wait", "ms": 2500}
+{"id": "p5-532", "command": "screenshot", "name": "p5-story2.png"}
+{"id": "p5-535", "command": "press", "key": "Space"}
+{"id": "p5-536", "command": "wait", "ms": 2500}
+{"id": "p5-537", "command": "screenshot", "name": "p5-story3.png"}
+{"id": "p5-540", "command": "press", "key": "Space"}
+{"id": "p5-541", "command": "wait", "ms": 2500}
+{"id": "p5-542", "command": "screenshot", "name": "p5-story4.png"}
+{"id": "p5-545", "command": "hover", "x": 370, "y": 700, "ms": 1500}
+{"id": "p5-546", "command": "screenshot", "name": "p5-card1-read.png"}
+{"id": "p5-548", "command": "hover", "x": 670, "y": 770, "ms": 1500}
+{"id": "p5-549", "command": "screenshot", "name": "p5-card2-read.png"}
+{"id": "p5-551", "command": "hover", "x": 1030, "y": 730, "ms": 1500}
+{"id": "p5-552", "command": "screenshot", "name": "p5-card3-read.png"}
+{"id": "p5-555", "command": "click", "x": 370, "y": 700}
+{"id": "p5-556", "command": "wait", "ms": 2000}
+{"id": "p5-557", "command": "screenshot", "name": "p5-confirm-preview.png"}
+{"id": "p5-560", "command": "press", "key": "Space"}
+{"id": "p5-561", "command": "wait", "ms": 2500}
+{"id": "p5-562", "command": "screenshot", "name": "p5-1111a.png"}
+{"id": "p5-565", "command": "press", "key": "Space"}
+{"id": "p5-566", "command": "wait", "ms": 2500}
+{"id": "p5-567", "command": "screenshot", "name": "p5-1111b.png"}
+{"id": "p5-570", "command": "press", "key": "Space"}
+{"id": "p5-571", "command": "wait", "ms": 2500}
+{"id": "p5-572", "command": "screenshot", "name": "p5-1111c.png"}
+{"id": "p5-575", "command": "press", "key": "Space"}
+{"id": "p5-576", "command": "wait", "ms": 2500}
+{"id": "p5-577", "command": "screenshot", "name": "p5-1111d.png"}
+{"id": "p5-580", "command": "hover", "x": 350, "y": 730, "ms": 1500}
+{"id": "p5-581", "command": "screenshot", "name": "p5-1111-c1.png"}
+{"id": "p5-583", "command": "hover", "x": 670, "y": 770, "ms": 1500}
+{"id": "p5-584", "command": "screenshot", "name": "p5-1111-c2.png"}
+{"id": "p5-586", "command": "hover", "x": 1030, "y": 730, "ms": 1500}
+{"id": "p5-587", "command": "screenshot", "name": "p5-1111-c3.png"}
+{"id": "p5-590", "command": "click", "x": 1030, "y": 730}
+{"id": "p5-591", "command": "wait", "ms": 2000}
+{"id": "p5-592", "command": "screenshot", "name": "p5-1111-confirm.png"}
+{"id": "p5-595", "command": "press", "key": "Space"}
+{"id": "p5-596", "command": "wait", "ms": 2500}
+{"id": "p5-597", "command": "screenshot", "name": "p5-1112a.png"}
+{"id": "p5-600", "command": "press", "key": "Space"}
+{"id": "p5-601", "command": "wait", "ms": 2500}
+{"id": "p5-602", "command": "screenshot", "name": "p5-1112b.png"}
+{"id": "p5-605", "command": "press", "key": "Space"}
+{"id": "p5-606", "command": "wait", "ms": 2500}
+{"id": "p5-607", "command": "screenshot", "name": "p5-1112c.png"}
+{"id": "p5-610", "command": "press", "key": "Space"}
+{"id": "p5-611", "command": "wait", "ms": 2500}
+{"id": "p5-612", "command": "screenshot", "name": "p5-1112d.png"}
+{"id": "p5-615", "command": "hover", "x": 350, "y": 730, "ms": 1500}
+{"id": "p5-616", "command": "screenshot", "name": "p5-1112-c1.png"}
+{"id": "p5-618", "command": "hover", "x": 670, "y": 770, "ms": 1500}
+{"id": "p5-619", "command": "screenshot", "name": "p5-1112-c2.png"}
+{"id": "p5-621", "command": "hover", "x": 1030, "y": 730, "ms": 1500}
+{"id": "p5-622", "command": "screenshot", "name": "p5-1112-c3.png"}
+{"id": "p5-625", "command": "click", "x": 350, "y": 730}
+{"id": "p5-626", "command": "wait", "ms": 2000}
+{"id": "p5-627", "command": "screenshot", "name": "p5-1112-selected.png"}
+{"id": "p5-630", "command": "press", "key": "Space"}
+{"id": "p5-631", "command": "wait", "ms": 3000}
+{"id": "p5-632", "command": "press", "key": "Space"}
+{"id": "p5-633", "command": "wait", "ms": 3000}
+{"id": "p5-634", "command": "screenshot", "name": "p5-after1112.png"}
