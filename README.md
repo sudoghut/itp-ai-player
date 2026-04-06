@@ -1,6 +1,25 @@
-# fishframe.net/itp automation starter
+# Into the Painting — AI Player
 
-This workspace contains minimal automation starters for opening and inspecting `https://fishframe.net/itp` from VS Code.
+## About the Game
+
+[**Into the Painting**](https://fishframe.net/itp) (入画) is an AI-driven open narrative game based on the classical painting *Along the River During the Qingming Festival* (清明上河图). Players step into the historical city of Bianjing (汴京), inhabiting characters from different social classes — exploring their birth, occupation, relationships, and private longings while making choices that ripple through an interconnected social network. Each playthrough generates a unique storyline with multiple possible endings powered by real-time AI simulation.
+
+The game is built on the **FISH** (Framework for Interactive Simulation of History) framework at the University of Hong Kong's Faculty of Arts, supported by the Arts Tech Lab. It is currently in a non-commercial playtest phase focused on AI-driven interactive historical simulation and digital humanities research.
+
+## Acknowledgments
+
+This automation project is built to interact with *Into the Painting*, and we sincerely thank its creators for this inspiring work:
+
+- **Yuqi Chen** (陈钰琪), Assistant Professor, University of Hong Kong — Producer, prototype design, system design, development, and narrative design
+- **Yulou Qingge** (雨楼清歌) — Co-producer, interaction design, narrative design, and animation editing
+
+Thank you for bringing the world inside the scroll to life.
+
+---
+
+## What This Repo Does
+
+This workspace contains automation scripts for opening, inspecting, and playing [fishframe.net/itp](https://fishframe.net/itp) programmatically.
 
 ## Recommended path
 
