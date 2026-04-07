@@ -1,4 +1,6 @@
-# Into the Painting — AI Player
+# Into the Painting (入画) - AI Player
+
+Automated game testing project for [Into the Painting](https://play.fishframe.net/itp/), a Godot WebAssembly narrative game set in Northern Song Dynasty China.
 
 ## About the Game
 
@@ -17,82 +19,73 @@ Thank you for bringing the world inside the scroll to life.
 
 ---
 
-## What This Repo Does
+## How It Works
 
-This workspace contains automation scripts for opening, inspecting, and playing [fishframe.net/itp](https://fishframe.net/itp) programmatically.
+This project uses an AI agent (Claude) + Playwright to play the game autonomously via a persistent Chrome browser session. The agent reads screenshots, analyzes choices, and makes strategic decisions based on accumulated playthrough history.
 
-## Recommended path
+## Getting Started
 
-Use the Python version in this repo because the current machine has Python available but Node is not activated correctly through `nvm`.
-
-## Python setup
+### Prerequisites
 
 ```powershell
 python -m pip install -r requirements.txt
 python -m playwright install chromium
 ```
 
-## Run
+### Credentials
 
-```powershell
-python scripts/open_game.py
+Copy `.env.sample` to `.env` and fill in your game credentials:
+
+```
+GAME_USERNAME=your_username
+GAME_PASSWORD=your_password
 ```
 
-This opens the page and saves a screenshot to `artifacts/game-home.png`.
+### Recommended Usage
 
-## Inspect mode
+1. **Start the interactive session runner**, which opens a persistent Chrome browser:
 
-```powershell
-python scripts/inspect_game.py
+   ```powershell
+   python scripts/interactive_session_runner.py
+   ```
+
+2. **Complete login and enter the game manually.** The runner opens a visible browser window. Log in with your account, select a character, and advance until you reach the gameplay screen (where you see the character's stats panel and narrative text / choice cards).
+
+3. **Hand off to the AI agent.** Once you are on the gameplay screen, let the agent take over. Tell your agent something like:
+
+   > Play this game following the rules in AGENTS.md. Don't ask me for confirmation — keep playing autonomously, make optimal choices, and record every decision to artifacts/game-history.json.
+
+   The agent will:
+   - Read choice cards by hovering over them
+   - Analyze options against past playthrough lessons (`artifacts/game-history.json`)
+   - Make strategic decisions following the rules in `AGENTS.md`
+   - Advance dialogue and handle UI interactions automatically
+   - Record all choices, outcomes, and lessons learned
+
+### Why Manual Login?
+
+The game site uses authentication that is difficult to automate reliably. Having the user complete login ensures the session is properly established before automation begins. This also avoids storing credentials in automation scripts.
+
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| `AGENTS.md` | Rules, coordinates, strategies, and game knowledge for the AI agent |
+| `artifacts/game-history.json` | All playthrough records with choices, outcomes, and lessons |
+| `scripts/interactive_session_runner.py` | Core automation runner - polls `commands.jsonl` and executes actions |
+| `scripts/send_cmds.py` | Helper to append commands to the queue |
+| `.env` | Game credentials (not committed) |
+
+## Architecture
+
+```
+User (login) --> Chrome browser <-- interactive_session_runner.py
+                                         ^
+                                         |
+                                    commands.jsonl <-- AI Agent (Claude)
+                                         |
+                                         v
+                                    screenshots --> AI Agent reads & decides
 ```
 
-This runs headless, captures a screenshot, and writes a basic DOM summary to `artifacts/page-summary.json`.
-
-## Probe the game flow
-
-```powershell
-python scripts/probe_game_flow.py
-```
-
-This clicks through the main game entry links and writes per-step summaries to `artifacts/game-flow.json`.
-
-## Run the autonomous test session
-
-```powershell
-python scripts/run_test_session.py
-```
-
-This performs a repeatable smoke and exploratory pass on the landing page and the canvas game, then writes results to `artifacts/test-session/report.json`.
-
-## Inspect runtime
-
-```powershell
-python scripts/inspect_runtime.py
-```
-
-This inspects the game page runtime, script bundle markers, and canvas state after load.
-
-## Long load probe
-
-```powershell
-python scripts/long_load_probe.py
-```
-
-This observes the desktop game loading sequence for about 3 minutes and stores periodic screenshots.
-
-## Guest flow probe
-
-```powershell
-python scripts/guest_flow_probe.py
-```
-
-This waits for the desktop main menu, enters via guest login, and captures follow-up gameplay screens.
-
-## Node setup
-
-Node files are also included, but they require a working local Node installation first:
-
-```powershell
-npm install
-npx playwright install chromium
-```
+The runner watches `artifacts/interactive-session/commands.jsonl` for new commands (click, hover, screenshot, press, etc.) and executes them against the browser. The AI agent writes commands to this file and reads back screenshots to understand the game state.
