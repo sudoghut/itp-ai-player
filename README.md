@@ -32,14 +32,9 @@ python -m pip install -r requirements.txt
 python -m playwright install chromium
 ```
 
-### Credentials
+### Configure Chrome Path
 
-Copy `.env.sample` to `.env` and fill in your game credentials:
-
-```
-GAME_USERNAME=your_username
-GAME_PASSWORD=your_password
-```
+Before running, check the `Browser setup` section in `AGENTS.md` and update the Chrome executable path to match your system. The default is set to `C:\Program Files\Google\Chrome\Application\chrome.exe` (Windows). On macOS it is typically `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`, and on Linux `/usr/bin/google-chrome`.
 
 ### Recommended Usage
 
@@ -74,7 +69,6 @@ The game site uses authentication that is difficult to automate reliably. Having
 | `artifacts/game-history.json` | All playthrough records with choices, outcomes, and lessons |
 | `scripts/interactive_session_runner.py` | Core automation runner - polls `commands.jsonl` and executes actions |
 | `scripts/send_cmds.py` | Helper to append commands to the queue |
-| `.env` | Game credentials (not committed) |
 
 ## Architecture
 
