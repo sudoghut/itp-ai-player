@@ -17,6 +17,10 @@ This workspace is for automated gameplay of the web game at `https://play.fishfr
 - Do not use Playwright's bundled Chromium for this game.
 - Use a single persistent browser session. Do not restart the game between steps.
 
+## Screenshot-first rule
+
+Always screenshot and read the image before performing any action. Evaluate the current game state from the screenshot, then decide the next step. This applies to all phases — dialogue, transitions, choices, and any other interaction.
+
 ## Sending commands to the runner
 
 - Use `scripts/send_cmds.py` to append commands to the queue. Do NOT create new scripts for sending commands — this helper already exists.
