@@ -1,0 +1,389 @@
+{
+  "created_at": "2026-04-07T19:50:17",
+  "duplicate_count": 23,
+  "delete_candidate_count": 15,
+  "duplicates": [
+    {
+      "name": "s1-1116-after.png",
+      "duplicate_of": "p5-after-choice.png",
+      "confidence": "medium",
+      "reason": "both screenshots have almost no text and the cropped image hash is nearly identical",
+      "seq_ratio": 0.0,
+      "jaccard": 0.0,
+      "hash_distance": 2,
+      "cluster_representative": "p5-after-choice.png"
+    },
+    {
+      "name": "p5-card12-3b.png",
+      "duplicate_of": "p5-card12-3.png",
+      "confidence": "medium",
+      "reason": "OCR mostly matches and image layout is nearly the same",
+      "seq_ratio": 0.9029,
+      "jaccard": 0.67,
+      "hash_distance": 31,
+      "cluster_representative": "p5-card12-3.png"
+    },
+    {
+      "name": "p5-mid-card.png",
+      "duplicate_of": "p5-card2-read.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9581,
+      "jaccard": 0.6915,
+      "hash_distance": 51,
+      "cluster_representative": "p5-card2-read.png"
+    },
+    {
+      "name": "p5-card22-3b.png",
+      "duplicate_of": "p5-card22-3.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9577,
+      "jaccard": 0.6341,
+      "hash_distance": 72,
+      "cluster_representative": "p5-card22-3.png"
+    },
+    {
+      "name": "p5-right-card.png",
+      "duplicate_of": "p5-card24-3.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9615,
+      "jaccard": 0.6818,
+      "hash_distance": 91,
+      "cluster_representative": "p5-card24-3.png"
+    },
+    {
+      "name": "p5-card7-3b.png",
+      "duplicate_of": "p5-card7-3.png",
+      "confidence": "medium",
+      "reason": "OCR mostly matches and image layout is nearly the same",
+      "seq_ratio": 0.9157,
+      "jaccard": 0.8372,
+      "hash_distance": 79,
+      "cluster_representative": "p5-card7-3.png"
+    },
+    {
+      "name": "s1-1115j-c2b.png",
+      "duplicate_of": "s1-1115j-c2.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9796,
+      "jaccard": 0.8533,
+      "hash_distance": 5,
+      "cluster_representative": "s1-1115j-c2.png"
+    },
+    {
+      "name": "s1-1116-cancel.png",
+      "duplicate_of": "s1-1116-c2.png",
+      "confidence": "medium",
+      "reason": "OCR mostly matches and image layout is nearly the same",
+      "seq_ratio": 0.9421,
+      "jaccard": 0.7656,
+      "hash_distance": 31,
+      "cluster_representative": "s1-1116-c2.png"
+    },
+    {
+      "name": "s1-1116-click2.png",
+      "duplicate_of": "s1-1116-c2.png",
+      "confidence": "medium",
+      "reason": "OCR mostly matches and image layout is nearly the same",
+      "seq_ratio": 0.8406,
+      "jaccard": 0.7105,
+      "hash_distance": 12,
+      "cluster_representative": "s1-1116-c2.png"
+    },
+    {
+      "name": "s1-1116-jade2.png",
+      "duplicate_of": "s1-1116-cancel.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.96,
+      "jaccard": 0.6957,
+      "hash_distance": 98,
+      "cluster_representative": "s1-1116-c2.png"
+    },
+    {
+      "name": "s1-1116-ready.png",
+      "duplicate_of": "s1-1116-cancel.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.96,
+      "jaccard": 0.6957,
+      "hash_distance": 8,
+      "cluster_representative": "s1-1116-c2.png"
+    },
+    {
+      "name": "s1-1116k-c2c.png",
+      "duplicate_of": "s1-1116-c2.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9748,
+      "jaccard": 0.9474,
+      "hash_distance": 105,
+      "cluster_representative": "s1-1116-c2.png"
+    },
+    {
+      "name": "s1-1116-c3b.png",
+      "duplicate_of": "s1-1116-c3.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9714,
+      "jaccard": 0.7368,
+      "hash_distance": 42,
+      "cluster_representative": "s1-1116-c3.png"
+    },
+    {
+      "name": "s1-1116-c3d.png",
+      "duplicate_of": "s1-1116-c3.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9714,
+      "jaccard": 0.7368,
+      "hash_distance": 98,
+      "cluster_representative": "s1-1116-c3.png"
+    },
+    {
+      "name": "s1-crash.png",
+      "duplicate_of": "s1-1116a.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9524,
+      "jaccard": 0.7565,
+      "hash_distance": 21,
+      "cluster_representative": "s1-1116a.png"
+    },
+    {
+      "name": "s1-1116g.png",
+      "duplicate_of": "s1-1116b.png",
+      "confidence": "medium",
+      "reason": "OCR mostly matches and image layout is nearly the same",
+      "seq_ratio": 0.9022,
+      "jaccard": 0.7255,
+      "hash_distance": 145,
+      "cluster_representative": "s1-1116b.png"
+    },
+    {
+      "name": "s1-1117l-c1.png",
+      "duplicate_of": "s1-1117k-c1.png",
+      "confidence": "medium",
+      "reason": "OCR mostly matches and image layout is nearly the same",
+      "seq_ratio": 0.9091,
+      "jaccard": 0.825,
+      "hash_distance": 46,
+      "cluster_representative": "s1-1117k-c1.png"
+    },
+    {
+      "name": "s1-1119e-c2b.png",
+      "duplicate_of": "s1-1119e-c2.png",
+      "confidence": "medium",
+      "reason": "OCR mostly matches and image layout is nearly the same",
+      "seq_ratio": 0.9167,
+      "jaccard": 0.7436,
+      "hash_distance": 10,
+      "cluster_representative": "s1-1119e-c2.png"
+    },
+    {
+      "name": "s1-1121f-c1b.png",
+      "duplicate_of": "s1-1121f-c1.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9559,
+      "jaccard": 0.8028,
+      "hash_distance": 5,
+      "cluster_representative": "s1-1121f-c1.png"
+    },
+    {
+      "name": "s1-1121f-c1c.png",
+      "duplicate_of": "s1-test-c1.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9771,
+      "jaccard": 0.7324,
+      "hash_distance": 61,
+      "cluster_representative": "s1-1121f-c1.png"
+    },
+    {
+      "name": "s1-test-c1.png",
+      "duplicate_of": "s1-1121f-c1c.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9771,
+      "jaccard": 0.7324,
+      "hash_distance": 61,
+      "cluster_representative": "s1-1121f-c1.png"
+    },
+    {
+      "name": "s1-test-c2.png",
+      "duplicate_of": "s1-1121f-c2b.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9925,
+      "jaccard": 0.9841,
+      "hash_distance": 7,
+      "cluster_representative": "s1-1121f-c2b.png"
+    },
+    {
+      "name": "s1-test-c3.png",
+      "duplicate_of": "s1-1121f-c3.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9552,
+      "jaccard": 0.8,
+      "hash_distance": 27,
+      "cluster_representative": "s1-1121f-c3.png"
+    }
+  ],
+  "delete_candidates": [
+    {
+      "name": "p5-mid-card.png",
+      "duplicate_of": "p5-card2-read.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9581,
+      "jaccard": 0.6915,
+      "hash_distance": 51,
+      "cluster_representative": "p5-card2-read.png"
+    },
+    {
+      "name": "p5-card22-3b.png",
+      "duplicate_of": "p5-card22-3.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9577,
+      "jaccard": 0.6341,
+      "hash_distance": 72,
+      "cluster_representative": "p5-card22-3.png"
+    },
+    {
+      "name": "p5-right-card.png",
+      "duplicate_of": "p5-card24-3.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9615,
+      "jaccard": 0.6818,
+      "hash_distance": 91,
+      "cluster_representative": "p5-card24-3.png"
+    },
+    {
+      "name": "s1-1115j-c2b.png",
+      "duplicate_of": "s1-1115j-c2.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9796,
+      "jaccard": 0.8533,
+      "hash_distance": 5,
+      "cluster_representative": "s1-1115j-c2.png"
+    },
+    {
+      "name": "s1-1116-jade2.png",
+      "duplicate_of": "s1-1116-cancel.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.96,
+      "jaccard": 0.6957,
+      "hash_distance": 98,
+      "cluster_representative": "s1-1116-c2.png"
+    },
+    {
+      "name": "s1-1116-ready.png",
+      "duplicate_of": "s1-1116-cancel.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.96,
+      "jaccard": 0.6957,
+      "hash_distance": 8,
+      "cluster_representative": "s1-1116-c2.png"
+    },
+    {
+      "name": "s1-1116k-c2c.png",
+      "duplicate_of": "s1-1116-c2.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9748,
+      "jaccard": 0.9474,
+      "hash_distance": 105,
+      "cluster_representative": "s1-1116-c2.png"
+    },
+    {
+      "name": "s1-1116-c3b.png",
+      "duplicate_of": "s1-1116-c3.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9714,
+      "jaccard": 0.7368,
+      "hash_distance": 42,
+      "cluster_representative": "s1-1116-c3.png"
+    },
+    {
+      "name": "s1-1116-c3d.png",
+      "duplicate_of": "s1-1116-c3.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9714,
+      "jaccard": 0.7368,
+      "hash_distance": 98,
+      "cluster_representative": "s1-1116-c3.png"
+    },
+    {
+      "name": "s1-crash.png",
+      "duplicate_of": "s1-1116a.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9524,
+      "jaccard": 0.7565,
+      "hash_distance": 21,
+      "cluster_representative": "s1-1116a.png"
+    },
+    {
+      "name": "s1-1121f-c1b.png",
+      "duplicate_of": "s1-1121f-c1.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9559,
+      "jaccard": 0.8028,
+      "hash_distance": 5,
+      "cluster_representative": "s1-1121f-c1.png"
+    },
+    {
+      "name": "s1-1121f-c1c.png",
+      "duplicate_of": "s1-test-c1.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9771,
+      "jaccard": 0.7324,
+      "hash_distance": 61,
+      "cluster_representative": "s1-1121f-c1.png"
+    },
+    {
+      "name": "s1-test-c1.png",
+      "duplicate_of": "s1-1121f-c1c.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9771,
+      "jaccard": 0.7324,
+      "hash_distance": 61,
+      "cluster_representative": "s1-1121f-c1.png"
+    },
+    {
+      "name": "s1-test-c2.png",
+      "duplicate_of": "s1-1121f-c2b.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9925,
+      "jaccard": 0.9841,
+      "hash_distance": 7,
+      "cluster_representative": "s1-1121f-c2b.png"
+    },
+    {
+      "name": "s1-test-c3.png",
+      "duplicate_of": "s1-1121f-c3.png",
+      "confidence": "high",
+      "reason": "story OCR is nearly identical",
+      "seq_ratio": 0.9552,
+      "jaccard": 0.8,
+      "hash_distance": 27,
+      "cluster_representative": "s1-1121f-c3.png"
+    }
+  ]
+}

@@ -98,6 +98,41 @@ async def execute_command(page, command: dict[str, Any]) -> dict | None:
             encoding="utf-8",
         )
         return {"eval_result": result}
+    elif kind == "spiral_hover":
+        # Spiral hover around (cx, cy) with given radius, taking screenshots
+        # when the page title changes (indicating a tooltip appeared).
+        # Usage: {"command": "spiral_hover", "x": 384, "y": 681, "radius": 20, "name": "card1.png"}
+        import math
+        cx, cy = command["x"], command["y"]
+        radius = command.get("radius", 20)
+        step_delay = command.get("step_ms", 150)
+        name = command.get("name", "spiral.png")
+        old_title = await page.title()
+        found = False
+
+        # Generate spiral points: center, then rings at r=10 and r=radius
+        points = [(cx, cy)]
+        for r in [10, radius]:
+            for i in range(8):
+                angle = 2 * math.pi * i / 8
+                points.append((int(cx + r * math.cos(angle)), int(cy + r * math.sin(angle))))
+
+        for px, py in points:
+            await page.mouse.move(px, py)
+            await page.wait_for_timeout(step_delay)
+            new_title = await page.title()
+            if new_title != old_title:
+                # Title changed — tooltip likely appeared, screenshot immediately
+                path = ROOT / name
+                await page.screenshot(path=str(path), full_page=True)
+                found = True
+                break
+
+        if not found:
+            # No tooltip detected, screenshot anyway for debugging
+            path = ROOT / name
+            await page.screenshot(path=str(path), full_page=True)
+
     elif kind == "stop":
         raise SystemExit(0)
     return None

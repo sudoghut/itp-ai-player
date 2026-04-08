@@ -4,11 +4,22 @@
 # IDE
 .vscode/
 
+# Python bytecode/cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
 # Browser user data (large, contains session cookies)
 artifacts/interactive-session/user-data/
+
+# Temporary OCR dedupe workspace
+artifacts/interactive-session/.ocr-dedupe-work/
 
 # Runner logs
 artifacts/interactive-session/runner.log
 
 # Notes with credentials
 notes.txt
+
+# Local Codex resume helper
+codex-log.txt
